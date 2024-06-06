@@ -18,6 +18,7 @@ jobs:
     - name: Set up Git
       run: |
         git config --global user.name ${{ github.actor }}
+        git config --global user.email ${{ github.actor }}@users.noreply.github.com
 
     - name: Create a dummy commit
       run: |
